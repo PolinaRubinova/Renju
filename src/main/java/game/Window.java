@@ -11,7 +11,6 @@ public class Window {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         //startFrame.setSize(screenSize);
         startFrame.setSize(1000, 600);
-        //startFrame.add(new Panel());
 
         Panel panel = new Panel();
         startFrame.setContentPane(panel);
