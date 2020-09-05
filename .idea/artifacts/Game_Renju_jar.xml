@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Game_Renju:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Game_Renju_jar</output-path>
-    <root id="archive" name="Game_Renju.jar">
-      <element id="module-output" name="Game_Renju" />
-    </root>
-  </artifact>
-</component>

@@ -11,8 +11,8 @@ public class Player {
 
     public String[][] list = new String[15][15];
 
-    private Image imgBlack = new ImageIcon("C:\\Users\\User\\IdeaProjects\\_1\\src\\main\\resources\\files\\player_black38.png").getImage();
-    private Image imgWhite = new ImageIcon("C:\\Users\\User\\IdeaProjects\\_1\\src\\main\\resources\\files\\player_white38.png").getImage();
+    private Image imgBlack = new ImageIcon("C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\player_black38.png").getImage();
+    private Image imgWhite = new ImageIcon("C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\player_white38.png").getImage();
 
     public boolean turn = true;
     public static boolean click = false;
@@ -189,11 +189,11 @@ public class Player {
         if (turn) {
             g.setColor(Color.BLACK);
             g.drawString("Ходят", 40, 500);
-            if (count >= 6) g.drawImage(new ImageIcon("C:\\Users\\User\\IdeaProjects\\_1\\src\\main\\resources\\files\\but_pas.png").getImage(), 20, 300, null);
+            if (count >= 6) g.drawImage(new ImageIcon("C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but_pas.png").getImage(), 20, 300, null);
         } else {
             g.setColor(Color.WHITE);
             g.drawString("Ходят", 800, 500);
-            if (count >= 6) g.drawImage(new ImageIcon("C:\\Users\\User\\IdeaProjects\\_1\\src\\main\\resources\\files\\but_pas.png").getImage(), 800, 300, null);
+            if (count >= 6) g.drawImage(new ImageIcon("C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but_pas.png").getImage(), 800, 300, null);
         }
 
         for (int i = 0; i < 15; i ++) {
