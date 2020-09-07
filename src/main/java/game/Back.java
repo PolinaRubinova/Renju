@@ -10,6 +10,7 @@ public class Back {
         if (Panel.state.equals(Panel.STATES.MENU)) {
             g.drawImage(new ImageIcon("C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\back_sakura.jpg").getImage(), 0, 0, null);
         }
+
         if (Panel.state.equals(Panel.STATES.PLAY)) {
             g.drawImage(new ImageIcon("C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\field.png").getImage(), 0, 0, null);
         }

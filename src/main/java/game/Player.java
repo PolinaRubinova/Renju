@@ -121,15 +121,7 @@ public class Player {
             }
         }
 
-        if (count >= 225) {
-            int countFull = 0;
-            for (int i = 0; i < 15; i++) {
-                for (int j = 0; j < 15; j++) {
-                    if (!list[i][j].equals("")) countFull++;
-                }
-            }
-            if (countFull == 225) return "-";
-        }
+        if (!oppToPut5()) return "-";
         return "";
     }
 
@@ -177,8 +169,6 @@ public class Player {
         return false;
     }
 
-    public double getX() { return x; }
-    public double getY() { return y; }
     public double getW() { return w; }
     public double getH() { return h; }
 

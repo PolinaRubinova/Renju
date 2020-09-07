@@ -104,10 +104,6 @@ public class Panel extends JPanel implements ActionListener {
                             state = STATES.END;
                             Player.win = player.getWin();
                         }
-                        if (player.count >= 221 && player.oppToPut5()) {
-                            state = STATES.END;
-                            Player.win = "-";
-                        }
                         player.countPass = 0;
                         Player.click = false;
                     }
