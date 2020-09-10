@@ -36,13 +36,13 @@ public class Player {
                 list[i][j] = "";
             }
         }
+        turn = true;
         list[7][7] = "0";
         count = 1;
         countPass = 0;
     }
 
     public String getWin() {
-
         int countWinBlack = 0;
         int countWinWhite = 0;
 

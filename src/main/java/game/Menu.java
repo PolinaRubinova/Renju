@@ -7,9 +7,12 @@ public class Menu {
 
     public static boolean click = false;
 
-    ButtMenu button1 = new ButtMenu(10, 150, 330, 100, "Новая игра", "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1.png", 45);
-    ButtMenu button2 = new ButtMenu(10, 280, 330, 100, "Информация", "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1.png", 45);
-    ButtMenu button3 = new ButtMenu(10, 410, 330, 100, "Выход", "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1.png", 45);
+    ButtMenu button1 = new ButtMenu(10, 150, 330, 100,
+            "Новая игра", "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1.png", 45);
+    ButtMenu button2 = new ButtMenu(10, 280, 330, 100,
+            "Информация", "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1.png", 45);
+    ButtMenu button3 = new ButtMenu(10, 410, 330, 100,
+            "Выход", "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1.png", 45);
 
     public void draw(Graphics2D g) {
         Font font = new Font("idk", Font.ITALIC, 80);

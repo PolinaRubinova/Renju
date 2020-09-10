@@ -84,7 +84,8 @@ public class Panel extends JPanel implements ActionListener {
             back.draw(g);
             player.draw(g);
 
-            Image img = new ImageIcon("C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\player_ch.png").getImage();
+            Image img = new ImageIcon(
+                    "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\player_ch.png").getImage();
 
             //Ход игрока и провера на "победу"
             if (mouseX > 245 && mouseX < 747.5 && mouseY > 28 && mouseY < 530.5) {
