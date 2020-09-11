@@ -2,7 +2,6 @@ package game;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.File;
 
 public class Player {
     private double x;
@@ -25,8 +24,8 @@ public class Player {
 
     public int countPass = 0;
 
-    public String butPas = (new File("src/main/resources/files/but_pas.png")).getAbsolutePath();
-    public String butPas1 = (new File("src/main/resources/files/but_pas1.png")).getAbsolutePath();
+    public String butPas = "src/main/resources/files/but_pas.png";
+    public String butPas1 = "src/main/resources/files/but_pas1.png";
 
     public static String win;
 
