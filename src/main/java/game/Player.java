@@ -12,9 +12,9 @@ public class Player {
 
     public String[][] list = new String[15][15];
 
-    public String playerCh = (new File("src/main/resources/files/player_ch.png")).getAbsolutePath();
-    public String playerBl = (new File("src/main/resources/files/player_black38.png")).getAbsolutePath();
-    public String playerWh = (new File("src/main/resources/files/player_white38.png")).getAbsolutePath();
+    public String playerCh = "src/main/resources/files/player_ch.png";
+    public String playerBl = "src/main/resources/files/player_black38.png";
+    public String playerWh = "src/main/resources/files/player_white38.png";
 
     private Image imgBlack = new ImageIcon(playerBl).getImage();
     private Image imgWhite = new ImageIcon(playerWh).getImage();

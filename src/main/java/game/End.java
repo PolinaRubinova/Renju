@@ -7,8 +7,8 @@ public class End {
 
     public static boolean click = false;
 
-    public String but2 = (new File("src/main/resources/files/but2.png")).getAbsolutePath();
-    public String but2ch = (new File("src/main/resources/files/but2ch.png")).getAbsolutePath();
+    public String but2 = "src/main/resources/files/but2.png";
+    public String but2ch = "src/main/resources/files/but2ch.png";
 
     Menu.ButtMenu button1 = new Menu.ButtMenu(
             350, 250, 300, 68, "Новая игра", but2, 35);

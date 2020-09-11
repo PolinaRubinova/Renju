@@ -8,8 +8,8 @@ public class Menu {
 
     public static boolean click = false;
 
-    public String but1 = (new File("src/main/resources/files/but1.png")).getAbsolutePath();
-    public String but1ch = (new File("src/main/resources/files/but1ch.png")).getAbsolutePath();
+    public String but1 = "src/main/resources/files/but1.png";
+    public String but1ch = "src/main/resources/files/but1ch.png";
 
     ButtMenu button1 = new ButtMenu(
             10, 150, 330, 100, "Новая игра", but1, 45);

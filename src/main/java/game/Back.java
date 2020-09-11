@@ -6,10 +6,10 @@ import java.io.File;
 
 public class Back {
 
-    private String menu = (new File("src/main/resources/files/back_sakura.jpg")).getAbsolutePath();
-    private String field = (new File("src/main/resources/files/field.png")).getAbsolutePath();
-    private String info = (new File("src/main/resources/files/back_info.png")).getAbsolutePath();
-    private String end = (new File("src/main/resources/files/back_win.jpg")).getAbsolutePath();
+    private String menu = "src/main/resources/files/back_sakura.jpg";
+    private String field = "src/main/resources/files/field.png";
+    private String info = "src/main/resources/files/back_info.png";
+    private String end = "src/main/resources/files/back_win.jpg";
 
     public void draw(Graphics2D g) {
 
