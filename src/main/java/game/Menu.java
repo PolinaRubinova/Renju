@@ -2,17 +2,21 @@ package game;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 
 public class Menu {
 
     public static boolean click = false;
 
-    ButtMenu button1 = new ButtMenu(10, 150, 330, 100,
-            "Новая игра", "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1.png", 45);
-    ButtMenu button2 = new ButtMenu(10, 280, 330, 100,
-            "Информация", "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1.png", 45);
-    ButtMenu button3 = new ButtMenu(10, 410, 330, 100,
-            "Выход", "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1.png", 45);
+    public String but1 = (new File("src/main/resources/files/but1.png")).getAbsolutePath();
+    public String but1ch = (new File("src/main/resources/files/but1ch.png")).getAbsolutePath();
+
+    ButtMenu button1 = new ButtMenu(
+            10, 150, 330, 100, "Новая игра", but1, 45);
+    ButtMenu button2 = new ButtMenu(
+            10, 280, 330, 100, "Информация", but1, 45);
+    ButtMenu button3 = new ButtMenu(
+            10, 410, 330, 100, "Выход", but1, 45);
 
     public void draw(Graphics2D g) {
         Font font = new Font("idk", Font.ITALIC, 80);

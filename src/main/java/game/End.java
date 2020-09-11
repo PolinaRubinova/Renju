@@ -1,13 +1,21 @@
 package game;
 
 import java.awt.*;
+import java.io.File;
 
 public class End {
 
     public static boolean click = false;
-    Menu.ButtMenu button1 = new Menu.ButtMenu(350, 250, 300, 68, "Новая игра", "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but2.png", 35);
-    Menu.ButtMenu button2 = new Menu.ButtMenu(350, 350, 300, 68, "Меню", "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but2.png", 35);
-    Menu.ButtMenu button3 = new Menu.ButtMenu(350, 450, 300, 68, "Выход", "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but2.png", 35);
+
+    public String but2 = (new File("src/main/resources/files/but2.png")).getAbsolutePath();
+    public String but2ch = (new File("src/main/resources/files/but2ch.png")).getAbsolutePath();
+
+    Menu.ButtMenu button1 = new Menu.ButtMenu(
+            350, 250, 300, 68, "Новая игра", but2, 35);
+    Menu.ButtMenu button2 = new Menu.ButtMenu(
+            350, 350, 300, 68, "Меню", but2, 35);
+    Menu.ButtMenu button3 = new Menu.ButtMenu(
+            350, 450, 300, 68, "Выход", but2, 35);
 
     public void draw(Graphics2D g) {
         Font font1 = new Font("F", Font.BOLD, 70);

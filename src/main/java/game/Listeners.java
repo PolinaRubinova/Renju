@@ -4,9 +4,7 @@ import java.awt.event.*;
 
 public class Listeners implements MouseListener, KeyListener, MouseMotionListener {
     @Override
-    public void keyTyped(KeyEvent keyEvent) {
-
-    }
+    public void keyTyped(KeyEvent keyEvent) {}
 
     @Override
     public void keyPressed(KeyEvent keyEvent) {
@@ -19,14 +17,10 @@ public class Listeners implements MouseListener, KeyListener, MouseMotionListene
     }
 
     @Override
-    public void keyReleased(KeyEvent keyEvent) {
-
-    }
+    public void keyReleased(KeyEvent keyEvent) {}
 
     @Override
-    public void mouseClicked(MouseEvent mouseEvent) {
-
-    }
+    public void mouseClicked(MouseEvent mouseEvent) {}
 
     @Override
     public void mousePressed(MouseEvent mouseEvent) {
@@ -64,19 +58,13 @@ public class Listeners implements MouseListener, KeyListener, MouseMotionListene
     }
 
     @Override
-    public void mouseEntered(MouseEvent mouseEvent) {
-
-    }
+    public void mouseEntered(MouseEvent mouseEvent) {}
 
     @Override
-    public void mouseExited(MouseEvent mouseEvent) {
-
-    }
+    public void mouseExited(MouseEvent mouseEvent) {}
 
     @Override
-    public void mouseDragged(MouseEvent mouseEvent) {
-
-    }
+    public void mouseDragged(MouseEvent mouseEvent) {}
 
     @Override
     public void mouseMoved(MouseEvent mouseEvent) {

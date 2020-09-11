@@ -47,35 +47,35 @@ public class Panel extends JPanel implements ActionListener {
 
             if (mouseX > menu.button1.getX() && mouseX < menu.button1.getX() + menu.button1.getW() &&
                     mouseY > menu.button1.getY() && mouseY < menu.button1.getY() + menu.button1.getH()) {
-            menu.button1.pic = "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1ch.png";
+            menu.button1.pic = menu.but1ch;
                 if (Menu.click) {
                     player.newGame();
                     state = STATES.PLAY;
                     Menu.click = false;
                 }
             } else {
-                menu.button1.pic = "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1.png";
+                menu.button1.pic = menu.but1;
             }
 
             if (mouseX > menu.button2.getX() && mouseX < menu.button2.getX() + menu.button2.getW() &&
                     mouseY > menu.button2.getY() && mouseY < menu.button2.getY() + menu.button2.getH()) {
-                menu.button2.pic = "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1ch.png";
+                menu.button2.pic = menu.but1ch;
                 if (Menu.click) {
                     state = STATES.INFO;
                     Menu.click = false;
                 }
             } else {
-                menu.button2.pic = "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1.png";
+                menu.button2.pic = menu.but1;
             }
 
             if (mouseX > menu.button3.getX() && mouseX < menu.button3.getX() + menu.button3.getW() &&
                     mouseY > menu.button3.getY() && mouseY < menu.button3.getY() + menu.button3.getH()) {
-                menu.button3.pic = "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1ch.png";
+                menu.button3.pic = menu.but1ch;
                 if (Menu.click) {
                     System.exit(0);
                 }
             } else {
-                menu.button3.pic = "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but1.png";
+                menu.button3.pic = menu.but1;
             }
                 gameDraw();
         }
@@ -84,8 +84,7 @@ public class Panel extends JPanel implements ActionListener {
             back.draw(g);
             player.draw(g);
 
-            Image img = new ImageIcon(
-                    "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\player_ch.png").getImage();
+            Image img = new ImageIcon(player.playerCh).getImage();
 
             //Ход игрока и провера на "победу"
             if (mouseX > 245 && mouseX < 747.5 && mouseY > 28 && mouseY < 530.5) {
@@ -117,8 +116,8 @@ public class Panel extends JPanel implements ActionListener {
                     (!player.turn && mouseX > 800 && mouseX < 950 && mouseY > 300 && mouseY < 360))
                     ) {
                 if (player.turn) {
-                    g.drawImage(new ImageIcon("C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but_pas1.png").getImage(), 20, 300, null);
-                } else g.drawImage(new ImageIcon("C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but_pas1.png").getImage(), 800, 300, null);
+                    g.drawImage(new ImageIcon(player.butPas1).getImage(), 20, 300, null);
+                } else g.drawImage(new ImageIcon(player.butPas1).getImage(), 800, 300, null);
                 if (Player.click) {
                     player.turn = !player.turn;
                     player.count++;
@@ -145,36 +144,31 @@ public class Panel extends JPanel implements ActionListener {
 
             if (mouseX > end.button1.getX() && mouseX < end.button1.getX() + end.button1.getW() &&
                     mouseY > end.button1.getY() && mouseY < end.button1.getY() + end.button1.getH()) {
-                end.button1.pic = "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but2ch.png";
+                end.button1.pic = end.but2ch;
                 if (End.click) {
                     player.newGame();
                     state = STATES.PLAY;
                     End.click = false;
                 }
-            } else {
-                end.button1.pic = "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but2.png";
-            }
+            } else end.button1.pic = end.but2;
 
             if (mouseX > end.button2.getX() && mouseX < end.button2.getX() + end.button2.getW() &&
                     mouseY > end.button2.getY() && mouseY < end.button2.getY() + end.button2.getH()) {
-                end.button2.pic = "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but2ch.png";
+                end.button2.pic = end.but2ch;
                 if (End.click) {
                     state = STATES.MENU;
                     End.click = false;
                 }
-            } else {
-                end.button2.pic = "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but2.png";
-            }
+            } else end.button2.pic = end.but2;
 
             if (mouseX > end.button3.getX() && mouseX < end.button3.getX() + end.button3.getW() &&
                     mouseY > end.button3.getY() && mouseY < end.button3.getY() + end.button3.getH()) {
-                end.button3.pic = "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but2ch.png";
+                end.button3.pic = end.but2ch;
                 if (End.click) {
                     System.exit(0);
                 }
-            } else {
-                end.button3.pic = "C:\\Users\\User\\IdeaProjects\\Renju\\src\\main\\resources\\files\\but2.png";
-            }
+            } else end.button3.pic = end.but2;
+
             gameDraw();
         }
     }
